@@ -13,7 +13,7 @@ This project involves analyzing a Spotify dataset with various attributes about 
 The primary goals of the project are to practice advanced SQL skills and generate actionable insights from the dataset.
 
 
-##Dataset Structure
+###Dataset Structure
 
 The dataset includes the following attributes:
 - artist: The performer of the track.
