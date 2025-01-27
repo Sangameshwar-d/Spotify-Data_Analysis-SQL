@@ -1,11 +1,34 @@
 # Spotify-Data_Analysis-SQL
 
 
-
 ![Spotify Logo](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_logo.jpg)
 
-## Overview
-This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using **SQL**. It covers an end-to-end process of normalizing a denormalized dataset, performing SQL queries of varying complexity (easy, medium, and advanced), and optimizing query performance. The primary goals of the project are to practice advanced SQL skills and generate valuable insights from the dataset.
+## Project Overview
+This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using SQL. The key focus areas are:
+
+1.Normalizing a denormalized dataset.
+2.Writing SQL queries of varying complexity (easy, medium, and advanced).
+3.Optimizing query performance to derive valuable insights.
+
+The primary goals of the project are to practice advanced SQL skills and generate actionable insights from the dataset.
+
+
+##Dataset Structure
+
+The dataset includes the following attributes:
+- artist: The performer of the track.
+- track: The name of the song.
+- album: The album to which the track belongs.
+- album_type: The type of album (e.g., single or album).
+- danceability, energy, loudness, speechiness, acousticness, instrumentalness, liveness, valence, tempo: Various metrics related to the audio features of the track.
+- duration_min: Duration of the track in minutes.
+- title, channel, views, likes, comments: YouTube-related data for the track.
+- licensed: Indicates if the track is licensed.
+- official_video: Indicates if the track has an official video.
+- stream: Number of streams on Spotify.
+- energy_liveness: Calculated metric combining energy and liveness.
+- most_played_on: Indicates the platform where the track is most played.
+
 
 ```sql
 -- create table
@@ -40,14 +63,17 @@ CREATE TABLE spotify (
 ## Project Steps
 
 ### 1. Data Exploration
-Before diving into SQL, it’s important to understand the dataset thoroughly. The dataset contains attributes such as:
+Before writing SQL queries, the dataset was thoroughly analyzed to understand the structure, relationships, and potential insights. Key observations were made regarding:
+
 - `Artist`: The performer of the track.
 - `Track`: The name of the song.
 - `Album`: The album to which the track belongs.
 - `Album_type`: The type of album (e.g., single or album).
 - Various metrics such as `danceability`, `energy`, `loudness`, `tempo`, and more.
 
-### 4. Querying the Data
+---
+
+### 2. Querying the Data
 After the data is inserted, various SQL queries can be written to explore and analyze the data. Queries are categorized into **easy**, **medium**, and **advanced** levels to help progressively develop SQL proficiency.
 
 #### Easy Queries
@@ -59,14 +85,16 @@ After the data is inserted, various SQL queries can be written to explore and an
 #### Advanced Queries
 - Nested subqueries, window functions, CTEs, and performance optimization.
 
-### 5. Query Optimization
+---
+
+### 3. Query Optimization
 In advanced stages, the focus shifts to improving query performance. Some optimization strategies include:
 - **Indexing**: Adding indexes on frequently queried columns.
 - **Query Execution Plan**: Using `EXPLAIN ANALYZE` to review and refine query performance.
   
 ---
 
-## 15 Business problems
+## 4. Business problems
 
 ### Easy Level
 1. Retrieve the names of all tracks that have more than 1 billion streams.
@@ -89,15 +117,28 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 4. Find tracks where the energy-to-liveness ratio is greater than 1.2.
 5. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
 
+---
 
-Here’s an updated section for **Spotify Advanced SQL Project and Query Optimization** README, focusing on the query optimization task you performed.
+## 5. Insights Generated
+
+1. Identified top-performing tracks by streams, views, and likes.
+2. Highlighted relationships between audio features (e.g., energy and liveness).
+3. Determined platform-specific engagement patterns.
+4. Derived album and artist-specific performance metrics.
+
 
 ---
 
-## Technology Stack
+## 6. Technology Stack
 - **Database**: PostgreSQL
 - **SQL Queries**: DDL, DML, Aggregations, Joins, Subqueries, Window Functions
 - **Tools**: pgAdmin 4 
+
+---
+
+## 7. Conclusion
+
+This project provided hands-on experience with advanced SQL concepts and query optimization techniques. It also highlighted the importance of database design and performance tuning in real-world data analysis.
 
 ---
 
